@@ -113,3 +113,9 @@ curl --header "Content-Type: application/json" \
 ```
 
 Ответ: список всех сообщений чата со всеми полями, отсортированный по времени создания сообщения (от раннего к позднему). Или HTTP-код ошибки.
+
+
+# Запуск 
+```git clone```     
+```docker-compose build```    
+```docker-compose up```
