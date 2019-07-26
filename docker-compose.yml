@@ -1,0 +1,14 @@
+version: '3'
+services:
+  python:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH "/"
+    volumes:
+      - ./project:/project
+    ports:
+      - 9000:9000
+    command: python app.py
